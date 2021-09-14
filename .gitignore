@@ -1,6 +1,7 @@
 # Va a ignorar 
 
 node_modules .
+packages.json .
 
 styles/.sass-cache
 styles/.sass-cache/*
