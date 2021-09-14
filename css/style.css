@@ -112,6 +112,7 @@ header .menu .menu-container li .menu-items:hover {
   top: 100vh;
   z-index: 5;
   position: relative;
+  width: 100%;
 }
 #astrologia .grid-container {
   position: static;
@@ -406,6 +407,22 @@ header .menu .menu-container li .menu-items:hover {
   position: absolute;
   top: 50%;
   right: 30%;
+}
+
+/*Seccion servicios*/
+#servicios {
+  top: 100vh;
+  z-index: 6;
+  position: relative;
+  width: 100%;
+  background-image: url(../Img/fondos/noisy-texture-300x300-o9-d19-c-BF8D7A-t0.png);
+}
+#servicios .titulo-servicios {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  font-family: "Playfair Display";
+  font-style: italic;
 }
 
 /*# sourceMappingURL=style.css.map */
