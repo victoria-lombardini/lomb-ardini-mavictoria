@@ -1,0 +1,81 @@
+/*Media Querins*/
+
+/*Mobile*/
+@media only screen and (max-width: 576px) {
+    
+.section {
+    position: absolute;
+    width: 100%;
+    // height: 100vh;
+    overflow: hidden;
+    clip: rect(0, auto, auto, 0);
+}
+
+
+    header {
+        position: relative;
+
+
+        .menu {
+
+            .menu-container {
+                flex-direction: row;
+                align-self: center;
+                justify-content: center;
+                gap: 1rem;
+                flex-wrap: wrap;
+
+
+                .menu-items {
+                    display: flex;
+
+                }
+
+            }
+        }
+    }
+
+
+    #conocenos {
+        display: flex;
+        flex-direction: column;
+    
+    .padre-conocenos {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+}
+}
+
+/* tablet */
+@media only screen and (min-width: 577px) and (max-width:960px) {
+    header {
+        position: relative;
+
+
+        .menu-container {
+            flex-direction: row;
+            align-self: center;
+            justify-content: center;
+            gap: 1rem;
+
+
+            .menu-items {
+                display: flex;
+            }
+        }
+    }
+
+    #conocenos {
+        display: flex;
+        flex-direction: column;
+    
+    .padre-conocenos {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+}
+}

@@ -1,0 +1,9 @@
+@mixin colorhover {
+    font-family: 'Raleway bold', sans-serif;
+    transition-duration: 0.3s;
+}
+
+@mixin parametros ($ancho, $height) {
+    width: $ancho;
+    height: $height;
+}

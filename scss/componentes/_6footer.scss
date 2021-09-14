@@ -1,0 +1,23 @@
+/*Footer*/
+.redes-sociales {
+    letter-spacing: map-get($redesSociales, espacioletras);
+    background-image: map-get($redesSociales,fondo);
+    padding: map-get($redesSociales,espacios);
+    display: map-get($redesSociales,disp);
+    opacity: map-get($redesSociales,transparencia);
+    justify-content: map-get($redesSociales,justificacion);
+    width:map-get($redesSociales,ancho );
+
+    top: 100vh;
+    z-index: 6;
+    position: relative;
+
+}
+
+.fa-linkedin-in,
+.fa-instagram,
+.fa-github {
+    size: 50px;
+    color: map-get($redesSociales,color);
+}
+

@@ -1,0 +1,30 @@
+/*Icono ir para arriba*/
+.btn-volver {
+    display: block;
+    width: 100px;
+    position: fixed;
+    right: 0px;
+    bottom: 15px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 7;
+}
+.btn-volver img {
+    width: 50%;
+}
+@keyframes rotate {
+    0% {
+    transform: rotate(0deg); }
+    50% {
+    transform: rotate(0deg); }
+    60% {
+    transform: rotate(-360deg); }
+    100% {
+    transform: rotate(-360deg); } }
+
+.btn-volver {
+    animation-name: rotate;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s; }

@@ -1,0 +1,6 @@
+# Va a ignorar 
+
+node_modules .
+
+styles/.sass-cache
+styles/.sass-cache/*

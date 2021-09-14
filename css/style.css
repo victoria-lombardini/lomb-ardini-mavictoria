@@ -1,0 +1,411 @@
+/*Body*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../Img/fondos/noisy-texture-300x300-o9-d17-c-d9d9d9-t0.png");
+}
+
+/*Header*/
+header {
+  background-image: url("../Img/fondos/noisy-texture-300x300-o9-d17-c-d9d9d9-t0.png");
+  opacity: 0.8;
+  display: flex;
+  position: relative;
+  z-index: 5;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 5em;
+}
+header .menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+header .menu .menu-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5rem;
+  flex-wrap: nowrap;
+}
+header .menu .menu-container li {
+  text-decoration: none;
+  list-style: none;
+}
+header .menu .menu-container li .menu-items {
+  text-decoration: none;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+header .menu .menu-container li .menu-items:hover {
+  font-family: "Raleway bold", sans-serif;
+  transition-duration: 0.3s;
+}
+
+/*Carrusel*/
+.micss {
+  background-image: url(../Img/fondos/noisy-texture-300x300-o9-d19-c-BF8D7A-t0.png);
+  top: 100vh;
+  z-index: 2;
+  position: relative;
+}
+
+/*Seccion Conocenos*/
+#conocenos {
+  background-image: url(../Img/fondos/noisy-texture-300x300-o9-d19-c-83a0a5-t0.png);
+  top: 100vh;
+  z-index: 3;
+  position: relative;
+}
+#conocenos .titulo-conocenos {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  font-family: "Playfair Display";
+  font-style: italic;
+}
+#conocenos .padre-conocenos {
+  display: flex;
+  float: right;
+  flex-direction: column;
+  text-align: justify;
+  padding: 2rem;
+  width: 50%;
+  height: auto;
+}
+#conocenos .padre-conocenos .parrafo-conocenos {
+  word-spacing: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+#conocenos .img-contenedor img {
+  width: 100%;
+}
+#conocenos .img-contenedor {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 2em;
+}
+#conocenos .hijos-conocenos {
+  border: 2px solid white;
+  filter: grayscale(2) opacity(2);
+  transition: all 300ms ease;
+}
+#conocenos .img-contenedor img:hover {
+  filter: grayscale(0) opacity(1);
+  transform: scale(1.5);
+  transition: all 300ms ease;
+  z-index: 5;
+  position: relative;
+}
+
+/*Seccion Astrologia*/
+#astrologia {
+  background-image: url("../Img/fondos/noisy-texture-300x300-o9-d19-c-857b7b-t0.png");
+  top: 100vh;
+  z-index: 5;
+  position: relative;
+}
+#astrologia .grid-container {
+  position: static;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  padding: 4rem 0;
+  justify-items: center;
+  width: 100%;
+  height: auto;
+}
+#astrologia .grid-container .grid-item {
+  align-self: center;
+  cursor: pointer;
+  display: grid;
+  justify-items: center;
+}
+#astrologia .grid-container img {
+  width: 70%;
+}
+
+/*Seccion contactanos*/
+#contactanos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  top: 100vh;
+  z-index: 5;
+  position: relative;
+  opacity: 0.7;
+}
+#contactanos .informacion {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+#contactanos .informacion .contacto1 {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+}
+#contactanos .informacion .cuidad {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+}
+#contactanos .informacion .mail {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  display: inline;
+}
+#contactanos .informacion .mail:hover {
+  background-image: url("https://uploads-ssl.webflow.com/60dc79ab28c396d2972ef3e8/60ef4d5099267103695efbda_chevy.svg");
+  background-position: 0 100%;
+  background-size: 0.4em;
+  background-repeat: repeat-x;
+  height: 1.3em;
+  cursor: pointer;
+}
+
+/*Footer*/
+.redes-sociales {
+  letter-spacing: 50px;
+  background-image: url(../Img/fondos/Footer.png);
+  padding: 20px 0px;
+  display: flex;
+  opacity: 0.5;
+  justify-content: center;
+  width: 100%;
+  top: 100vh;
+  z-index: 6;
+  position: relative;
+}
+
+.fa-linkedin-in,
+.fa-instagram,
+.fa-github {
+  size: 50px;
+  color: #fbf1dd;
+}
+
+/*Media Querins*/
+/*Mobile*/
+@media only screen and (max-width: 576px) {
+  .section {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    clip: rect(0, auto, auto, 0);
+  }
+
+  header {
+    position: relative;
+  }
+  header .menu .menu-container {
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  header .menu .menu-container .menu-items {
+    display: flex;
+  }
+
+  #conocenos {
+    display: flex;
+    flex-direction: column;
+  }
+  #conocenos .padre-conocenos {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+}
+/* tablet */
+@media only screen and (min-width: 577px) and (max-width: 960px) {
+  header {
+    position: relative;
+  }
+  header .menu-container {
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  header .menu-container .menu-items {
+    display: flex;
+  }
+
+  #conocenos {
+    display: flex;
+    flex-direction: column;
+  }
+  #conocenos .padre-conocenos {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+}
+/*Icono ir para arriba*/
+.btn-volver {
+  display: block;
+  width: 100px;
+  position: fixed;
+  right: 0px;
+  bottom: 15px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 7;
+}
+
+.btn-volver img {
+  width: 50%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.btn-volver {
+  animation-name: rotate;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+}
+
+/*Logo*/
+.logo {
+  --text-color: #c0bfbc;
+  position: relative;
+}
+.logo a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.logo a:nth-child(1) {
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 50%);
+  clip-path: polygon(0 0, 100% 0, 50% 50%);
+}
+.logo a:nth-child(2) {
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+  clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+}
+.logo a:nth-child(3) {
+  -webkit-clip-path: polygon(0 100%, 50% 50%, 100% 100%);
+  clip-path: polygon(0 100%, 50% 50%, 100% 100%);
+}
+.logo a:nth-child(4) {
+  -webkit-clip-path: polygon(0 0, 50% 50%, 0 100%);
+  clip-path: polygon(0 0, 50% 50%, 0 100%);
+}
+.logo a:hover {
+  -webkit-clip-path: none;
+  clip-path: none;
+  z-index: 2;
+}
+.logo a:nth-child(1):hover ~ .fill-text:before {
+  --fill-from: circle(0% at 50% 0%);
+  --fill-to: circle(150% at 0% 50%);
+  animation: fill-text 1s forwards;
+}
+.logo a:nth-child(1):hover ~ .fill-text:after {
+  --hover-text: "Bienvenidos";
+}
+.logo a:nth-child(2):hover ~ .fill-text:before {
+  --fill-from: circle(0% at 150% 50%);
+  --fill-to: circle(100% at 50% 50%);
+  animation: fill-text 1s forwards;
+}
+.logo a:nth-child(2):hover ~ .fill-text:after {
+  --hover-text: "Bienvenidos";
+}
+.logo a:nth-child(3):hover ~ .fill-text:before {
+  --fill-from: circle(0% at 50% 100%);
+  --fill-to: circle(150% at 0% 50%);
+  animation: fill-text 1s forwards;
+}
+.logo a:nth-child(3):hover ~ .fill-text:after {
+  --hover-text: "Bienvenidos";
+}
+.logo a:nth-child(4):hover ~ .fill-text:before {
+  --fill-from: circle(0% at 0% 50%);
+  --fill-to: circle(150% at 0% 50%);
+  animation: fill-text 1s forwards;
+}
+.logo a:nth-child(4):hover ~ .fill-text:after {
+  --hover-text: "Bienvenidos";
+}
+
+@keyframes fill-text {
+  0% {
+    clip-path: var(--fill-from);
+  }
+  100% {
+    clip-path: var(--fill-to);
+    color: black;
+  }
+}
+.fill-text {
+  color: #c0bfbc;
+  -webkit-text-stroke: 1px var(--text-color);
+  font-size: 20vw;
+  font-family: "Playfair Display";
+}
+.fill-text:before {
+  content: attr(data-text);
+  position: absolute;
+}
+.fill-text:after {
+  content: var(--hover-text);
+  -webkit-text-stroke: initial;
+  font: 2vw/1.5 "Raleway", sans-serif;
+  color: #999;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  white-space: nowrap;
+}
+
+.section {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  clip: rect(0, auto, auto, 0);
+}
+
+.fixed {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+}
+
+/*# sourceMappingURL=style.css.map */
