@@ -1,7 +1,7 @@
 # Va a ignorar 
 
-node_modules .
+node_modules/
 packages.json .
 
-styles/.sass-cache
+styles/scss/
 styles/.sass-cache/*
