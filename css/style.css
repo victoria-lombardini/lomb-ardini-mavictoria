@@ -184,7 +184,7 @@ header .menu .menu-container li .menu-items:hover {
 /*Footer*/
 .redes-sociales {
   letter-spacing: 50px;
-  background-image: url(../Img/fondos/Footer.png);
+  background-image: url("../Img/fondos/Footer.png");
   padding: 20px 0px;
   display: flex;
   opacity: 0.5;
@@ -415,7 +415,7 @@ header .menu .menu-container li .menu-items:hover {
   z-index: 6;
   position: relative;
   width: 100%;
-  background-image: url(../Img/fondos/noisy-texture-300x300-o9-d19-c-BF8D7A-t0.png);
+  background-image: url("../Img/fondos/noisy-texture-300x300-o9-d19-c-BF8D7A-t0.png");
 }
 #servicios .titulo-servicios {
   display: flex;
