@@ -383,7 +383,7 @@ header .menu .menu-container li .menu-items:hover {
   color: #c0bfbc;
   -webkit-text-stroke: 1px var(--text-color);
   font-size: 20vw;
-  font-family: "Playfair Display";
+  font-family: "Lora", serif;
 }
 .fill-text:before {
   content: attr(data-text);
