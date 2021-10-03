@@ -142,6 +142,22 @@ header .menu .menu-container li .menu-items:hover {
   width: 70%;
 }
 
+/*Seccion servicios*/
+#servicios {
+  top: 100vh;
+  z-index: 6;
+  position: relative;
+  width: 100%;
+  background-image: url(../Img/fondos/noisy-texture-300x300-o9-d19-c-BF8D7A-t0.png);
+}
+#servicios .titulo-servicios {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  font-family: "Playfair Display";
+  font-style: italic;
+}
+
 /*Seccion contactanos*/
 #contactanos {
   display: flex;
@@ -415,20 +431,5 @@ header .menu .menu-container li .menu-items:hover {
   right: 30%;
 }
 
-/*Seccion servicios*/
-#servicios {
-  top: 100vh;
-  z-index: 6;
-  position: relative;
-  width: 100%;
-  background-image: url(../Img/fondos/noisy-texture-300x300-o9-d19-c-BF8D7A-t0.png);
-}
-#servicios .titulo-servicios {
-  display: flex;
-  justify-content: center;
-  padding: 1em;
-  font-family: "Playfair Display";
-  font-style: italic;
-}
 
 /*# sourceMappingURL=style.css.map */
